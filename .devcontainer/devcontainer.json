@@ -11,7 +11,7 @@
 	"forwardPorts": [4567],
 	"portsAttributes": {
 		"4567": { "label":"Squeeze Analytics - NBA (API)" }
-	}
+	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "uname -a",
@@ -21,4 +21,7 @@
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
+
+	// Docker run arguments
+	"runArgs": ["--env-file", ".devcontainer/devcontainer.env"]
 }
